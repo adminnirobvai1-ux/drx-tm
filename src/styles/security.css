@@ -1,0 +1,48 @@
+/* Security & Tamper Guard Overlay Styles */
+.security-lock-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background-color: #0b1a3d;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  user-select: none;
+  backdrop-filter: blur(12px);
+}
+
+.security-lock-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.8px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 32px 24px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.security-badge-blocked {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

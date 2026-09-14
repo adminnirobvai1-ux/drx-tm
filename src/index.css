@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "./styles/blueprint-grid.css";
+@import "./styles/dot-matrix.css";
+@import "./styles/screen-card.css";
+@import "./styles/typography.css";
+@import "./styles/tech-hash.css";
+@import "./styles/security.css";
+@import "./styles/vip24-glow.css";
+
+/* Base Resets */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f4f9;
+  color: #0b1a3d;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent unwanted drag and text selection on technical UI elements */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Sleek Cyberpunk Custom Scrollbar for Desktop & Mobile */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 15, 30, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.45);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.7);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.4) transparent;
+}

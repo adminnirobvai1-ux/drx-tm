@@ -1,0 +1,32 @@
+/* Technical Corner Grid Hashes # */
+.tech-hash {
+  position: absolute;
+  color: #9cb0cc;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+  user-select: none;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.tech-hash-tl {
+  top: 6px;
+  left: 8px;
+}
+
+.tech-hash-tr {
+  top: 6px;
+  right: 8px;
+}
+
+.tech-hash-bl {
+  bottom: 6px;
+  left: 8px;
+}
+
+.tech-hash-br {
+  bottom: 6px;
+  right: 8px;
+}

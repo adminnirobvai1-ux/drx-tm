@@ -1,0 +1,8 @@
+{
+  "name": "Dark Killer",
+  "description": "Secured Dark Killer Signal Dashboard with backend server architecture and anti-inspection protection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

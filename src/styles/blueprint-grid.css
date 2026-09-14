@@ -1,0 +1,22 @@
+/* Blueprint Grid Technical Pattern Stylesheet */
+:root {
+  --blueprint-line-color: rgba(11, 26, 61, 0.055);
+  --blueprint-bg-color: #f9fbfe;
+  --blueprint-grid-size: 15px;
+}
+
+.blueprint-grid {
+  background-color: var(--blueprint-bg-color);
+  background-image: 
+    linear-gradient(to right, var(--blueprint-line-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--blueprint-line-color) 1px, transparent 1px);
+  background-size: var(--blueprint-grid-size) var(--blueprint-grid-size);
+  background-repeat: repeat;
+}
+
+.blueprint-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(11, 26, 61, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 26, 61, 0.08) 1px, transparent 1px);
+  background-size: 8px 8px;
+}

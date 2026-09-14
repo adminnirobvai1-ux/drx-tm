@@ -1,0 +1,271 @@
+/**
+ * VIP 24 Glowing Border and Technical Micro-Animations
+ */
+
+@keyframes glowBorderRedViolet {
+  0% {
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.7), inset 0 0 6px rgba(168, 85, 247, 0.35);
+    border-color: #ef4444;
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.9), inset 0 0 10px rgba(239, 68, 68, 0.55);
+    border-color: #a855f7;
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.7), inset 0 0 6px rgba(168, 85, 247, 0.35);
+    border-color: #ef4444;
+  }
+}
+
+.glow-top-winner {
+  animation: glowBorderRedViolet 2.2s infinite ease-in-out;
+  border-width: 2px !important;
+}
+
+@keyframes periodPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(168, 85, 247, 0);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 14px rgba(168, 85, 247, 0.75);
+  }
+}
+
+.animate-period-pulse {
+  animation: periodPulse 1.8s infinite ease-in-out;
+}
+
+/* 10 Win Boxes styling */
+.history-win-box {
+  width: 17px;
+  height: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.history-win-box-win {
+  background-color: #10b981;
+  color: #ffffff;
+  border: 1px solid #059669;
+}
+
+.history-win-box-loss {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: 1px solid #dc2626;
+}
+
+/* Robot HUD Scanner Sweep & Blue Timer Ring */
+@keyframes cyberScanSweep {
+  0% {
+    top: 5%;
+    opacity: 0.2;
+  }
+  50% {
+    top: 50%;
+    opacity: 0.9;
+  }
+  100% {
+    top: 95%;
+    opacity: 0.2;
+  }
+}
+
+.animate-cyber-scan {
+  animation: cyberScanSweep 1.8s infinite ease-in-out;
+}
+
+@keyframes blueRingGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(6, 182, 212, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(6, 182, 212, 1));
+  }
+}
+
+.animate-blue-ring-glow {
+  animation: blueRingGlow 2s infinite ease-in-out;
+}
+
+/* Smooth Left-to-Right and Right-to-Left Ticker Slide for Bengali Text */
+@keyframes pingpongSlide {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-16px);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  75% {
+    transform: translateX(16px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-pingpong-slide {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: pingpongSlide 6.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* High Precision Clock Needle Rotation (Outer frame stays still, inner hand rotates) */
+@keyframes rotateClockHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-clock-hand {
+  transform-box: view-box;
+  transform-origin: 12px 13px;
+  animation: rotateClockHand 2.4s linear infinite;
+  will-change: transform;
+}
+
+/* 20 Unique Model Micro-Animations */
+@keyframes tigerRoar {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px #f59e0b); }
+  50% { transform: scale(1.08) rotate(1deg); filter: drop-shadow(0 0 14px #fbbf24); }
+}
+.animate-tiger-roar { animation: tigerRoar 2.4s ease-in-out infinite; }
+
+@keyframes dragonBreathe {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px #10b981); }
+  50% { transform: scale(1.07); filter: drop-shadow(0 0 14px #34d399); }
+}
+.animate-dragon-breathe { animation: dragonBreathe 2.6s ease-in-out infinite; }
+
+@keyframes phoenixFlare {
+  0%, 100% { transform: translateY(0) scale(1); filter: drop-shadow(0 0 6px #f43f5e); }
+  50% { transform: translateY(-2px) scale(1.06); filter: drop-shadow(0 0 15px #fb7185); }
+}
+.animate-phoenix-flare { animation: phoenixFlare 2.2s ease-in-out infinite; }
+
+@keyframes eagleSoar {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-3px) rotate(2deg); filter: drop-shadow(0 0 10px #38bdf8); }
+}
+.animate-eagle-soar { animation: eagleSoar 2.8s ease-in-out infinite; }
+
+@keyframes lionPulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px #eab308); }
+  50% { transform: scale(1.06); filter: drop-shadow(0 0 13px #fde047); }
+}
+.animate-lion-pulse { animation: lionPulse 2.3s ease-in-out infinite; }
+
+@keyframes thunderZap {
+  0%, 100% { opacity: 0.95; transform: scale(1); }
+  25% { opacity: 1; transform: scale(1.08) rotate(-2deg); filter: drop-shadow(0 0 12px #38bdf8); }
+  50% { opacity: 0.85; transform: scale(0.98); }
+  75% { opacity: 1; transform: scale(1.06) rotate(2deg); filter: drop-shadow(0 0 14px #67e8f9); }
+}
+.animate-thunder-zap { animation: thunderZap 1.8s ease-in-out infinite; }
+
+@keyframes ninjaSlash {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.07) rotate(-3deg); filter: drop-shadow(0 0 10px #d946ef); }
+  70% { transform: scale(1.02) rotate(2deg); filter: drop-shadow(0 0 8px #ef4444); }
+}
+.animate-ninja-slash { animation: ninjaSlash 2.5s ease-in-out infinite; }
+
+@keyframes cobraSway {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3.5deg) scale(1.03); filter: drop-shadow(0 0 10px #10b981); }
+  75% { transform: rotate(3.5deg) scale(1.03); filter: drop-shadow(0 0 10px #059669); }
+}
+.animate-cobra-sway { animation: cobraSway 3s ease-in-out infinite; }
+
+@keyframes wolfHowl {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.06) translateY(-2px); filter: drop-shadow(0 0 13px #38bdf8); }
+}
+.animate-wolf-howl { animation: wolfHowl 2.7s ease-in-out infinite; }
+
+@keyframes blazeDance {
+  0%, 100% { transform: scale(1) skewX(0deg); filter: drop-shadow(0 0 6px #f97316); }
+  50% { transform: scale(1.07) skewX(2deg); filter: drop-shadow(0 0 16px #fb923c); }
+}
+.animate-blaze-dance { animation: blazeDance 2s ease-in-out infinite; }
+
+@keyframes viperStrike {
+  0%, 100% { transform: scale(1); }
+  45% { transform: scale(0.96); }
+  50% { transform: scale(1.09); filter: drop-shadow(0 0 14px #22c55e); }
+  60% { transform: scale(1.01); }
+}
+.animate-viper-strike { animation: viperStrike 2.6s ease-in-out infinite; }
+
+@keyframes rocketLaunch {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); filter: drop-shadow(0 0 12px #f43f5e); }
+}
+.animate-rocket-launch { animation: rocketLaunch 1.9s ease-in-out infinite; }
+
+@keyframes stormSpin {
+  0% { transform: rotate(0deg); filter: drop-shadow(0 0 6px #60a5fa); }
+  50% { filter: drop-shadow(0 0 14px #93c5fd); }
+  100% { transform: rotate(360deg); filter: drop-shadow(0 0 6px #60a5fa); }
+}
+.animate-storm-spin { animation: stormSpin 12s linear infinite; }
+
+@keyframes shurikenSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-shuriken-spin { animation: shurikenSpin 8s linear infinite; }
+
+@keyframes falconDive {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-2px) rotate(-3deg); filter: drop-shadow(0 0 12px #38bdf8); }
+}
+.animate-falcon-dive { animation: falconDive 2.3s ease-in-out infinite; }
+
+@keyframes pantherStalk {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px #a855f7); }
+  50% { transform: scale(1.05); filter: drop-shadow(0 0 14px #c084fc); }
+}
+.animate-panther-stalk { animation: pantherStalk 2.8s ease-in-out infinite; }
+
+@keyframes ghostFloat {
+  0%, 100% { transform: translateY(0); opacity: 0.95; }
+  50% { transform: translateY(-4px); opacity: 1; filter: drop-shadow(0 0 15px #38bdf8); }
+}
+.animate-ghost-float { animation: ghostFloat 3.2s ease-in-out infinite; }
+
+@keyframes sharkPatrol {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px) rotate(-1deg); }
+  75% { transform: translateX(2px) rotate(1deg); filter: drop-shadow(0 0 12px #0ea5e9); }
+}
+.animate-shark-patrol { animation: sharkPatrol 3.4s ease-in-out infinite; }
+
+@keyframes bulletSpin {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px #eab308); }
+  50% { transform: scale(1.06); filter: drop-shadow(0 0 14px #facc15); }
+}
+.animate-bullet-spin { animation: bulletSpin 2.1s ease-in-out infinite; }
+
+@keyframes darkPulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px #9333ea); }
+  50% { transform: scale(1.08); filter: drop-shadow(0 0 16px #a855f7); }
+}
+.animate-dark-pulse { animation: darkPulse 2.5s ease-in-out infinite; }
+
+

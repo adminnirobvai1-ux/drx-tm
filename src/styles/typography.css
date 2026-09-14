@@ -1,0 +1,28 @@
+/* Technical & Luxury Typography Classes */
+.font-serif-luxury {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-mono-tech {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-bangla {
+  font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+}
+
+.tracking-luxury {
+  letter-spacing: 0.12em;
+}
+
+.tracking-tech {
+  letter-spacing: 0.08em;
+}
+
+.text-navy-primary {
+  color: #0b1a3d;
+}
+
+.text-navy-muted {
+  color: rgba(11, 26, 61, 0.8);
+}

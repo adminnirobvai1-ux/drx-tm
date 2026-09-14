@@ -1,0 +1,21 @@
+/* Screen Card with Sharp Navy Blueprint Border */
+:root {
+  --screen-card-border-color: #0b1a3d;
+  --screen-card-border-width: 1.8px;
+  --screen-card-radius: 13px;
+}
+
+.screen-card {
+  border: var(--screen-card-border-width) solid var(--screen-card-border-color);
+  border-radius: var(--screen-card-radius);
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.screen-card:active {
+  transform: scale(0.99);
+}
+
+.screen-card-header {
+  border-bottom: var(--screen-card-border-width) solid var(--screen-card-border-color);
+}
